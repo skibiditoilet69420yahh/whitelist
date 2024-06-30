@@ -1,3 +1,5 @@
 local whitelist = {
  ["yes"] = true,
 }
+
+return whitelist
