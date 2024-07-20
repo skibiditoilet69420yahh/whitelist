@@ -48,7 +48,7 @@ function Library:Init(options)
 		GUI["1"]["IgnoreGuiInset"] = true;
 
 		GUI["2"] = Instance.new("Frame", GUI["1"]);
-		GUI["2"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+		GUI["2"]["BackgroundColor3"] = Color3.fromRGB(20,20,20);
 		GUI["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 		GUI["2"]["Size"] = UDim2.new(0, 550, 0, 400);
 		GUI["2"]["Position"] = UDim2.new(0.5,0,2,0);
@@ -121,14 +121,14 @@ function Library:Init(options)
 
 		GUI["a"] = Instance.new("Frame", GUI["4"]);
 		GUI["a"]["BorderSizePixel"] = 0;
-		GUI["a"]["BackgroundColor3"] = Color3.fromRGB(82, 82, 82);
+		GUI["a"]["BackgroundColor3"] = Color3.fromRGB(255,255,255);
 		GUI["a"]["AnchorPoint"] = Vector2.new(0, 1);
 		GUI["a"]["Size"] = UDim2.new(1, 0, 0, 1);
 		GUI["a"]["Position"] = UDim2.new(0, 0, 1, 0);
 		GUI["a"]["Name"] = [[Line]];
 
 		GUI["1b"] = Instance.new("Frame", GUI["2"]);
-		GUI["1b"]["BackgroundColor3"] = Color3.fromRGB(55, 55, 55);
+		GUI["1b"]["BackgroundColor3"] = Color3.fromRGB(35,35,35);
 		GUI["1b"]["AnchorPoint"] = Vector2.new(1, 0);
 		GUI["1b"]["BackgroundTransparency"] = 1;
 		GUI["1b"]["Size"] = UDim2.new(1, -133, 1, -42);
@@ -139,7 +139,7 @@ function Library:Init(options)
 	do
 		GUI["d"] = Instance.new("Frame", GUI["2"]);
 		GUI["d"]["BorderSizePixel"] = 0;
-		GUI["d"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+		GUI["d"]["BackgroundColor3"] = Color3.fromRGB(30,30,30);
 		GUI["d"]["Size"] = UDim2.new(0, 120, 1, -30);
 		GUI["d"]["Position"] = UDim2.new(0, 0, 0, 30);
 		GUI["d"]["Name"] = [[Navigation]];
@@ -149,13 +149,13 @@ function Library:Init(options)
 		
 		GUI["f"] = Instance.new("Frame", GUI["d"]);
 		GUI["f"]["BorderSizePixel"] = 0;
-		GUI["f"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+		GUI["f"]["BackgroundColor3"] = Color3.fromRGB(30,30,30);
 		GUI["f"]["Size"] = UDim2.new(1, 0, 0, 20);
 		GUI["f"]["Name"] = [[Hide]];
 
 		GUI["10"] = Instance.new("Frame", GUI["d"]);
 		GUI["10"]["BorderSizePixel"] = 0;
-		GUI["10"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+		GUI["10"]["BackgroundColor3"] = Color3.fromRGB(30,30,30);
 		GUI["10"]["AnchorPoint"] = Vector2.new(1, 0);
 		GUI["10"]["Size"] = UDim2.new(0, 20, 1, 0);
 		GUI["10"]["Position"] = UDim2.new(1, 0, 0, 0);
@@ -179,7 +179,7 @@ function Library:Init(options)
 
 		GUI["1a"] = Instance.new("Frame", GUI["d"]);
 		GUI["1a"]["BorderSizePixel"] = 0;
-		GUI["1a"]["BackgroundColor3"] = Color3.fromRGB(82, 82, 82);
+		GUI["1a"]["BackgroundColor3"] = Color3.fromRGB(255,255,255);
 		GUI["1a"]["Size"] = UDim2.new(0, 1, 1, 0);
 		GUI["1a"]["Position"] = UDim2.new(1, 0, 0, 0);
 		GUI["1a"]["Name"] = [[Line]];
@@ -209,7 +209,7 @@ function Library:Init(options)
 			Tab["17"] = Instance.new("TextLabel", GUI["11"]);
 			Tab["17"]["BorderSizePixel"] = 0;
 			Tab["17"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-			Tab["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+			Tab["17"]["BackgroundColor3"] = Color3.fromRGB(80,80,80);
 			Tab["17"]["TextSize"] = 12;
 			Tab["17"]["TextColor3"] = Color3.fromRGB(200, 200, 200);
 			Tab["17"]["Size"] = UDim2.new(1, 0, 0, 24);
@@ -261,7 +261,7 @@ function Library:Init(options)
 				end
 
 				Tab.Active = true
-				Library:tween(Tab["17"], {BackgroundTransparency = .8})
+				Library:tween(Tab["17"], {BackgroundTransparency = .65})
 				Library:tween(Tab["17"], {TextColor3 = Color3.fromRGB(255, 255, 255)})
 				Library:tween(Tab["19"], {ImageColor3 = Color3.fromRGB(255, 255, 255)})
 				Tab["1c"].Visible = true
