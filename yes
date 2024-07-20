@@ -192,7 +192,7 @@ function Library:Init(options)
 	end)
 	
 	wait(0.2)
-	Library:tween2(GUI["2"], {Position = UDim2.fromOffset((viewport.X / 1.25) - (GUI["2"].Size.X.Offset / 1.25), (viewport.Y / 1.25) - (GUI["2"].Size.Y.Offset / 1.25))})
+	Library:tween2(GUI["2"], {Position = UDim2.fromOffset((viewport.X / 1.25) - (GUI["2"].Size.X.Offset / 1.25), (viewport.Y / 1.1) - (GUI["2"].Size.Y.Offset / 1.1))})
 	
 	function GUI:Tab(options)
 		options = Library:validate({
