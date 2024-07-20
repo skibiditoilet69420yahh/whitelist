@@ -51,7 +51,7 @@ function Library:Init(options)
 		GUI["2"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 		GUI["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 		GUI["2"]["Size"] = UDim2.new(0, 550, 0, 400);
-		GUI["2"]["Position"] = UDim2.new(0.5,0,5,0);
+		GUI["2"]["Position"] = UDim2.new(0.5,0,2,0);
 		GUI["2"]["Name"] = [[Main]];
 		GUI["2"]["Draggable"] = true;
 
@@ -192,7 +192,7 @@ function Library:Init(options)
 	end)
 	
 	wait(0.2)
-	Library:tween2(GUI["2"], {Position = UDim2.fromOffset((viewport.X / 1.25) - (GUI["2"].Size.X.Offset / 1.25), (viewport.Y / 1.1) - (GUI["2"].Size.Y.Offset / 1.1))})
+	Library:tween2(GUI["2"], {Position = UDim2.fromOffset((viewport.X / 1.5) - (GUI["2"].Size.X.Offset / 1.5), (viewport.Y / 1.25) - (GUI["2"].Size.Y.Offset / 1.25))})
 	
 	function GUI:Tab(options)
 		options = Library:validate({
